@@ -12,9 +12,9 @@ let timeLimit = 1000 * 60 * 30
 const baseUrl = 'https://app-jp.patentcloud.com'
 
 var args = process.argv.slice(2)
-const account = args[0] || ''
-const password = args[1] || ''
-const filename = args[2] || ''
+const account = args[0]
+const password = args[1]
+const filename = args[2]
 
 let workspaceId = null
 
@@ -603,12 +603,12 @@ const vh3 = async (cookie, workspaceId) => {
 
             laastRes = res
         }
-
+/*
         if (_progress !== 1) {
             if (lastRes && lastRes.data) reject(CircularJSON.stringify(lastRes.data))
             else reject(_progress)
         }
-
+*/
         resolve(chartData)
     })
 }
