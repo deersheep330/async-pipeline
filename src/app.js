@@ -12,9 +12,9 @@ let timeLimit = 1000 * 60 * 30
 const baseUrl = 'https://app-jp.patentcloud.com'
 
 var args = process.argv.slice(2)
-const account = args[0]
-const password = args[1]
-const filename = args[2]
+const account = args[0] || ''
+const password = args[1] || ''
+const filename = args[2] || ''
 
 let workspaceId = null
 
