@@ -34,7 +34,7 @@ let sendError = (err) => {
 sendLog('[' + (new Date()).toLocaleTimeString() + '][thread ' + threadNumber + '] start for ' + filename)
 
 const defaultHeaders = {
-    'Referer': baseUrl,
+    'Referer': baseUrl + '/',
     'Accept-Language': 'zh-TW,zh;q=0.8,en-US;q=0.5,en;q=0.3',
     'Accept-Encoding': 'gzip, deflate, br',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:66.0) Gecko/20100101 Firefox/66.0',
