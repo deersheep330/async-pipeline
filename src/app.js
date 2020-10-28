@@ -9,7 +9,7 @@ const { sleep } = require('./utils/sleep.js')
 
 let threadNumber = 0
 let timeLimit = 1000 * 60 * 30
-const baseUrl = 'https://app-jp.patentcloud.com'
+const baseUrl = 'https://app.patentcloud.com'
 
 var args = process.argv.slice(2)
 const account = args[0] || ''
